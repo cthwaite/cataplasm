@@ -655,7 +655,7 @@ namespace cataplasm {
                         if(level_ != 0){
                             std::cout << "| ";
                         }
-                        std::cout << "                         '" << node.expr;
+                        std::cout << "                               '" << node.expr;
                         std::cout << "'";
                     }
                     break;
@@ -844,12 +844,12 @@ namespace cataplasm {
             std::cout << CLIAttr::Reset << std::endl;
         }
         std::cout << std::endl << "USAGE:" << std::endl;
-        std::cout << exe_name << " [-h] [-t|-x TAGS] [-v]" << std::endl;
+        std::cout << exe_name << " [-h] [-e|-v] [-t|-x] TAG1;TAG2;..." << std::endl;
         std::cout << std::endl << "Arguments:" << std::endl;
         std::cout << "\t-h        Prints this help message.\n";
         std::cout << "\t-e        Expand all expressions (also enables verbose mode).\n";
-        std::cout << "\t-t TAGS   Run only test blocks having any of the specified tags (semicolon-separated list).\n";
-        std::cout << "\t-x TAGS   Run only test blocks having all of the specified tags (semicolon-separated list).\n";
+        std::cout << "\t-t TAGS   Run test blocks tagged with any of the specified tags (semicolon-separated list).\n";
+        std::cout << "\t-x TAGS   Run only test blocks tagged with *all* of the specified tags (semicolon-separated list).\n";
         std::cout << "\t-v        Use verbose mode, printing the results of all tests.\n";
 
     }

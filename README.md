@@ -26,6 +26,20 @@ Test Macros
 - **NOTICE** (*expression*) - prints to stdout.
 - **WARN** (*expression*) - prints to stdout in *bright red*.
 
+Command-line flags
+----
+```
+USAGE:
+./sample [-h] [-e|-v] [-t|-x] TAG1;TAG2;...
+
+Arguments:
+        -h        Prints this help message.
+        -e        Expand all expressions (also enables verbose mode).
+        -t TAGS   Run test blocks tagged with any of the specified tags.
+        -x TAGS   Run only test blocks tagged with *all* of the specified tags.
+        -v        Use verbose mode, printing the results of all tests.
+```
+
 Example
 ----
 A complete program, using one of the Catch examples:
