@@ -1,13 +1,21 @@
 cataplasm [wip]
 ====
 
-Cataplasm is a small test framework for C++11 that emulates the core functionality of 
+Cataplasm is a tiny test framework for C++11 that emulates the core functionality of 
 [Catch](https://github.com/philsquared/Catch).
 
-- Single header file.
-- ~720 loc
+- Single header file ~10% the size of Catch's single-header.
+- Generates small executables.
 - Full expansion of expressions.
 - Catch-style section execution, each 'leaf section' is run exactly once per TEST_CASE.
+- [cloc](https://github.com/AlDanial/cloc) output:
+```
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+C/C++ Header                     1             82             49            686
+-------------------------------------------------------------------------------
+```
 
 Test Macros
 ----
