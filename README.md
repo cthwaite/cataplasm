@@ -8,14 +8,6 @@ Cataplasm is a tiny test framework for C++11 that emulates the core functionalit
 - Generates small executables.
 - Full expansion of expressions.
 - Catch-style section execution, each 'leaf section' is run exactly once per TEST_CASE.
-- [cloc](https://github.com/AlDanial/cloc) output:
-```
--------------------------------------------------------------------------------
-Language                     files          blank        comment           code
--------------------------------------------------------------------------------
-C/C++ Header                     1             82             49            686
--------------------------------------------------------------------------------
-```
 
 Test Macros
 ----
