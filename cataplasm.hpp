@@ -1,4 +1,4 @@
-//===[  CATAPLASM v0.1.0 – a small test framework ]===========================//
+//===[  CATAPLASM v0.2.1 – a small test framework ]===========================//
 #pragma once
 #include <algorithm>
 #include <cmath>
@@ -845,8 +845,7 @@ inline void print_help(const char *exe_name, const std::string &msg) {
 // #define CHECK_THROWS_AS( expr, exceptionType )
 // #define CHECK_NOTHROW( expr )
 
-#define INFO(msg) INFO(msg)
-#define WARN(msg) WARN(msg)
+#define SUCCEED(msg) PASS(msg)
 
 #define SCENARIO(name, tags) TEST_CASE("Scenario: " name, tags)
 #define GIVEN(desc) SECTION("   Given: " desc, "")
