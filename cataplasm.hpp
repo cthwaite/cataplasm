@@ -566,7 +566,7 @@ public:
       break;
     case NodeType::Pass:
       std::cout << node.status;
-      std::cout << CLIAttr::Green << "SUCCEED invoked" << CLIAttr::Reset;
+      std::cout << CLIAttr::Green << "PASS invoked" << CLIAttr::Reset;
       if (!node.expr.empty()) {
         std::cout << ": " << node.expr;
       }
