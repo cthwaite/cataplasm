@@ -87,6 +87,23 @@
   _IF_NODE(__VA_ARGS__, cataplasm::NodeType::Reject, cataplasm::Status::Fail,  \
            cataplasm::Status::Succeed, false)
 
+//----[ Aliases ]---------------------------------------------------------------
+#define ENSURE_EQ(lhs, rhs) ENSURE(lhs == rhs)
+#define VERIFY_EQ(lhs, rhs) VERIFY(lhs == rhs)
+
+#define ENSURE_NEQ(lhs, rhs) ENSURE(lhs != rhs)
+#define VERIFY_NEQ(lhs, rhs) VERIFY(lhs != rhs)
+
+#define ENSURE_LT(lhs, rhs) ENSURE(lhs < rhs)
+#define ENSURE_GT(lhs, rhs) ENSURE(lhs > rhs)
+#define ENSURE_LE(lhs, rhs) ENSURE(lhs <= rhs)
+#define ENSURE_GE(lhs, rhs) ENSURE(lhs >= rhs)
+
+#define VERIFY_LT(lhs, rhs) VERIFY(lhs < rhs)
+#define VERIFY_GT(lhs, rhs) VERIFY(lhs > rhs)
+#define VERIFY_LE(lhs, rhs) VERIFY(lhs <= rhs)
+#define VERIFY_GE(lhs, rhs) VERIFY(lhs >= rhs)
+
 //----[ Exception-handling tests ]----------------------------------------------
 #define _THROW_NODE(expr, node, result)                                        \
   cataplasm::g_TestReferee().push_exception(std::current_exception(), node,    \
