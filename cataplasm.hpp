@@ -104,6 +104,8 @@
 #define VERIFY_LE(lhs, rhs) VERIFY(lhs <= rhs)
 #define VERIFY_GE(lhs, rhs) VERIFY(lhs >= rhs)
 
+#define ENSURE_PTR(ptr) ENSURE(ptr != nullptr)
+
 //----[ Exception-handling tests ]----------------------------------------------
 #define _THROW_NODE(expr, node, result)                                        \
   cataplasm::g_TestReferee().push_exception(std::current_exception(), node,    \
